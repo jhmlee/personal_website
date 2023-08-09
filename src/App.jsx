@@ -1,15 +1,14 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
-
+import Home from './components/Home';
 import './App.css'
 
 const App = () => {
   return (  
   <>
     <Navbar />
-    <p>Testing this oasdfasdfut</p>
-    <Link to="profile" >profile page</Link>
+    <Home/>
   </> );
 }
  

@@ -1,0 +1,32 @@
+
+.homeText a {
+    margin-left: -0.25rem;
+    
+}
+.homeText p {
+    min-width: 4vw;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.Mason {
+    margin-left: -1rem;
+}
+
+.homeText .name {
+    display: flex;
+    margin-top: 100px;
+    font-size:100px;
+    margin-bottom: -20px;
+}
+
+/* Responsive font size for smaller screens */
+@media (max-width: 634px) {
+    .homeText .name {
+        font-size: 70px; /* Adjust this value as needed */
+    }
+}
