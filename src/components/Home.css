@@ -24,9 +24,28 @@
     margin-bottom: -20px;
 }
 
+.wave:hover {
+    animation: waveJiggleAnimation 0.5s ease;
+}
+
 /* Responsive font size for smaller screens */
 @media (max-width: 634px) {
     .homeText .name {
         font-size: 70px; /* Adjust this value as needed */
     }
 }
+
+@keyframes waveJiggleAnimation {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(-15deg);
+    }
+    75% {
+      transform: rotate(15deg);
+    }
+  }

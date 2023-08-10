@@ -1,0 +1,108 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.about {
+    display: flex;
+    max-width: 65vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.about .bio {
+    margin-top: 0;
+    text-align: left;
+    padding: 1rem;
+}
+
+
+img {
+    width: 35vw;
+}
+
+svg {
+    fill: "#1A1A1A";
+    height: 50px;
+    width: 50px;
+}
+
+svg:hover {
+    animation: waveJiggleAnimation 0.5s ease;
+    /* fill: #303030; */
+}
+
+.socials {
+    margin-left: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socials a {
+    animation: bounceAndThud 4s infinite;
+    animation-fill-mode: both;
+}
+
+/* Responsive font size for smaller screens */
+@media (max-width: 1000px) {
+    .about {
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+    img {
+        width: 50vw;
+    }
+    svg {
+        height: 40px;
+        width: 40px;
+    }
+    .socials {
+        margin-left: 0rem;
+    }
+}
+
+@keyframes waveJiggleAnimation {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(-15deg);
+    }
+    75% {
+      transform: rotate(15deg);
+    }
+}
+.socials a:nth-child(1) {
+    animation-delay: 1s;
+}
+  
+.socials a:nth-child(2) {
+    animation-delay: 2s; /* Adjust the delay as needed */
+}
+  
+.socials a:nth-child(3) {
+    animation-delay: 3s; /* Adjust the delay as needed */
+}
+@keyframes bounceAndThud {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      20% {
+        transform: translateY(-15px); /* Initial big bounce */
+      }
+      40% {
+        transform: translateY(0px); /* Settle-in bounce */
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+  }

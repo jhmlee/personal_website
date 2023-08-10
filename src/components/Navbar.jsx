@@ -2,6 +2,7 @@ import resume from '../assets/mason_lee_resume.pdf';
 import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import './Navbar.css'
 
 
@@ -13,13 +14,14 @@ const Navbar = () => {
         {name: 'projects', href: '/projects/home'}
     ]
     return (
+        <>
         <nav className="navbar">
             <div className="navName"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}>
             <Link to ="/"
             style = {{fontSize: "36px",
-            color: hover ? "#646cff" : "#302B27"}}>Mason Lee</Link>
+            color: hover ? "#3B60E4" : "#302B27"}}>Mason Lee</Link>
             </div>
             <div className="links">
                 <ul>
@@ -38,6 +40,9 @@ const Navbar = () => {
                 </ul>
             </div>
         </nav>
+        <Outlet />
+        </>
+        
     );
 }
  
