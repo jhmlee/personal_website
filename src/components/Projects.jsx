@@ -8,28 +8,33 @@ const Projects = () => {
     const projectsData = [
         {
             title: "Title 1",
-            link: "https://github.com/jhmlee",
+            github: "https://github.com/jhmlee",
             description: ["Description 1 point 1", "Description 1 point 2"],
+            link: '',
         },
         {
             title: "Title 2",
-            link: "https://github.com/jhmlee",
+            github: "https://github.com/jhmlee",
             description: ["Description 2"],
+            link: '',
         },
         {
             title: "Title 3",
-            link: "https://github.com/jhmlee",
+            github: "https://github.com/jhmlee",
             description: ["Description 3"],
+            link: '',
         },
         {
             title: "Title 4",
-            link: "https://github.com/jhmlee",
+            github: "https://github.com/jhmlee",
             description: ["Description 4"],
+            link: '',
         },
         {
             title: "Title 5",
-            link: "https://github.com/jhmlee",
+            github: "https://github.com/jhmlee",
             description: ["Description 5"],
+            link: '',
         },
     ];
 
@@ -40,6 +45,7 @@ const Projects = () => {
                     <ProjectItem
                         key={index}
                         title={project.title}
+                        github={project.github}
                         link={project.link}
                         description={
                             <ul>

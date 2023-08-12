@@ -3,6 +3,10 @@ import React, {useState, useEffect} from 'react';
 import './Home.css'
 import './AosInit'; 
 import HomeProjects from './HomeProjects';
+import face from '../assets/face.png'
+import { Link } from 'react-router-dom';
+
+
 
 const Home = () => {
     const [isActive, setIsActive] = useState(false);
@@ -11,7 +15,7 @@ const Home = () => {
             projectName: "ProjectA",
             link: "https://github.com/jhmlee",
             description: ["Description 1 point 1", "Description 1 point 2"],
-            image: "",
+            image: {face},
         },
         {
             projectName: "ProjectB",
@@ -63,6 +67,8 @@ const Home = () => {
                     />
                 ))}
                 </div>
+                <button><Link to ="/projects"style = {{fontSize: "24px"}}>See More</Link>
+            </button>
             </div>
         </div>
       );
