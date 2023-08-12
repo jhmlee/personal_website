@@ -2,6 +2,7 @@ nav {
     display: flex;
     margin-top: 0;
     min-width: 320px;
+    min-height: 9vh;
     justify-content: center;
     align-items: baseline;
 }

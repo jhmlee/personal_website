@@ -1,8 +1,20 @@
 
 .homeText a {
     margin-left: -0.25rem;
-    
 }
+.home{
+  margin: 0;
+  
+}
+
+.homeText {
+  min-height: 87vh;
+  justify-content: baseline;
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .homeText p {
     min-width: 4vw;
     display: flex;
@@ -15,23 +27,75 @@
 
 .Mason {
     margin-left: -1rem;
+    
+    background: rgba(255, 255, 255, 0.10); 
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .homeText .name {
     display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
     font-size:100px;
     margin-bottom: -20px;
+    margin-bottom: 2rem;
+}
+
+.homeText .projectStart {
+  margin-top: 24vh;
+  animation: upAndDown 1.5s infinite ease-in-out;
 }
 
 .wave:hover {
     animation: waveJiggleAnimation 0.5s ease;
 }
 
+.projectsMain {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+  
+}
+.projectPages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+.project-page {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+
+}
+
+
+.projectHome {
+  scroll-snap-align: center;
+  padding: 0;
+  min-height: 55vh;
+  min-width: 55rem;
+  background: rgba(255, 255, 255, 0.10); 
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 /* Responsive font size for smaller screens */
 @media (max-width: 634px) {
     .homeText .name {
         font-size: 70px; /* Adjust this value as needed */
+    }
+    .projectHome {
+        min-width: 20rem;
     }
 }
 
@@ -48,4 +112,15 @@
     75% {
       transform: rotate(15deg);
     }
+
+  }
+
+  @keyframes upAndDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+    
   }

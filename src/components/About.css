@@ -5,13 +5,23 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 5px;
+
+    
 }
 .about {
     display: flex;
     max-width: 65vw;
     justify-content: center;
     align-items: center;
-    margin-top: 7rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    /* for glass effect to decrease transparency can decrease 4th index on background */
+    background: rgba(255, 255, 255, 0.10); 
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .about .bio {
@@ -37,19 +47,19 @@ svg:hover {
 }
 
 .socials {
-    margin-left: 17rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
     gap: 1rem;
 }
 
 .socials a {
-    animation: bounceAndThud 4s infinite;
+    animation: bounceAndThud 3s infinite;
     animation-fill-mode: both;
 }
 
-/* Responsive font size for smaller screens */
+/* Responsive for smaller screens */
 @media (max-width: 1000px) {
     .about {
         flex-wrap: wrap;
@@ -64,6 +74,7 @@ svg:hover {
     }
     .socials {
         margin-left: 0rem;
+        margin-bottom: 0rem;
     }
 }
 
@@ -82,27 +93,24 @@ svg:hover {
     }
 }
 .socials a:nth-child(1) {
-    animation-delay: 1s;
+    animation-delay: 0s;
 }
   
 .socials a:nth-child(2) {
-    animation-delay: 2s; /* Adjust the delay as needed */
+    animation-delay: 1s; /* Adjust the delay as needed */
 }
   
 .socials a:nth-child(3) {
-    animation-delay: 3s; /* Adjust the delay as needed */
+    animation-delay: 2s; /* Adjust the delay as needed */
 }
 @keyframes bounceAndThud {
     0%, 100% {
         transform: translateY(0);
       }
       20% {
-        transform: translateY(-15px); /* Initial big bounce */
+        transform: translateY(-3px); /* Initial big bounce */
       }
       40% {
-        transform: translateY(0px); /* Settle-in bounce */
-      }
-      50% {
-        transform: translateY(-5px);
+        transform: translateY(0px); 
       }
   }

@@ -11,7 +11,7 @@ const Navbar = () => {
 
     const navigation = [
         {name: 'about', href: '/about'},
-        {name: 'projects', href: '/projects/home'}
+        {name: 'projects', href: '/projects'}
     ]
     return (
         <>
