@@ -1,6 +1,10 @@
 
+.container {
+    padding: 4rem;
+}
 .projectGrid {
     display: grid;
+    max-width: 70vw;
     grid-template-columns: repeat(2, 1fr);
 
     gap: 3rem;
@@ -9,9 +13,7 @@
 
 .project {
     padding: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-
+    display: grid;
 
     background: rgba(255, 255, 255, 0.10); 
     border-radius: 12px;
@@ -21,16 +23,47 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.projectHeader {
+
+.projTop {
     display: flex;
     align-items: center;
     gap: 1rem;
+    min-width: 100%;
+}
 
+.projLinkBox {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.projDescription {
+    text-align: left;
+    min-height: 8rem;
+}
+
+.projTags {
+    pointer-events: none;
+    margin-right: auto;
 }
 
 .project svg {
     height: 30px;
     width: 30px;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag-button {
+    background-color: rgba(255, 255, 255, 0.10); 
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 16px;
+    font-size: 14px;
 }
 
 @media (max-width: 800px) {

@@ -25,8 +25,9 @@ const About = () => {
                 <div className="bio">
                 <p>As a rising Junior studying Applied Math-Computer Science at Brown University, I'm passionate about solving complex problems and working collaboratively with a focus on software engineering.</p> 
                 <p>I spent the last summer working as a finance intern at Verizon, where I utilized both my quantitative and programming knowledge to provide meaningful solutions to the business.</p>
+                <p>At school, I'm the website manager for the Applied Mathematics Dept. Undergrad Group, mentor first-year students as a Meiklejohn Peer Advisor, and play IM soccer and basketball.</p>
                 <p>In my free time, I enjoy playing soccer, reading books, film photography, and playing all kinds of games with my friends.  </p>
-                <p>Thanks for visiting; let's connect :)</p>
+                <p>Thanks for visiting :)</p>
                 </div>
             </div>
         </div>

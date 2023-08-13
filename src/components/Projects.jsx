@@ -1,40 +1,43 @@
 import React from "react";
 import './Projects.css'
 import face from '../assets/face.png'
-import ProjectItem from './ProjectItem'; // Adjust the import path as needed
+import ProjectItem from './ProjectItem';
 import github from '../assets/icons/github.svg'
 
 const Projects = () => {
     const projectsData = [
         {
-            title: "Title 1",
+            title: "SAT Solver",
             github: "https://github.com/jhmlee",
-            description: ["Description 1 point 1", "Description 1 point 2"],
+            description: ["Intuitively visualize and solve NP-complete Boolean satisfiability problems", "Solver includes multiple algorithms and their visualizations to fully understand logic"],
             link: '',
+            tags: ['React', 'Javascript', 'CSS', 'Git'],
         },
         {
-            title: "Title 2",
-            github: "https://github.com/jhmlee",
-            description: ["Description 2"],
+            title: "Personal Portfolio",
+            github: "https://github.com/jhmlee/personal_website",
+            description: ["Designed and executed the proposed design from scratch to create a React.js-based front-end that boasts scalability and interactivity "],
             link: '',
+            tags: ['React', 'Javascript', 'CSS', 'HTML','Figma'],
         },
         {
-            title: "Title 3",
+            title: "Concurrent Store",
             github: "https://github.com/jhmlee",
-            description: ["Description 3"],
+            description: ["High-performance concurrent key-value store, facilitating efficient operations on KV- pairs while dynamically managing load distribution",],
             link: '',
+            tags: ['C'],
         },
         {
-            title: "Title 4",
+            title: "Wiki Search Engine",
             github: "https://github.com/jhmlee",
-            description: ["Description 4"],
-            link: '',
+            description: ["Custom search engine to index and query XML wikis", "Utilizes TF/IDF term weighting and Google's PageRank Algorithm to return optimized results"],
+            tags: ['Python'],
         },
         {
-            title: "Title 5",
+            title: "Decision Tree",
             github: "https://github.com/jhmlee",
             description: ["Description 5"],
-            link: '',
+            tags: ['Java'],
         },
     ];
 
@@ -44,7 +47,7 @@ const Projects = () => {
                 {projectsData.map((project, index) => (
                     <ProjectItem
                         key={index}
-                        title={project.title}
+                        title={<div><h3>{project.title}</h3> </div>   }
                         github={project.github}
                         link={project.link}
                         description={
@@ -53,6 +56,15 @@ const Projects = () => {
                                     <li key={i}>{point}</li>
                                 ))}
                             </ul>
+                        }
+                        tags={
+                            <div className="tags-container">
+                                {project.tags.map((tag, i) => (
+                                    <button key={i} className="tag-button">
+                                        {tag}
+                                    </button>
+                                ))}
+                            </div>
                         }
                     />
                 ))}
