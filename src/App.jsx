@@ -7,9 +7,7 @@ import './App.css'
 const App = () => {
   return (  
   <>
-    <Home/>
-    
-    
+    <Home/>    
   </> 
   );
 }

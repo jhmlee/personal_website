@@ -20,8 +20,7 @@ const Navbar = () => {
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}>
             <Link to ="/"
-            style = {{fontSize: "36px",
-            color: hover ? "#3B60E4" : "#302B27"}}>Mason Lee</Link>
+            style = {{fontSize: "36px"}}>Mason Lee</Link>
             </div>
             <div className="links">
                 <ul>

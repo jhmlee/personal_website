@@ -43,6 +43,10 @@
     min-height: 8rem;
 }
 
+.projLinkBox {
+    display: flex;
+}
+
 .projTags {
     pointer-events: none;
     margin-right: auto;

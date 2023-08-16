@@ -6,12 +6,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import About from './components/About.jsx'
 import Navbar from './components/Navbar.jsx'
 import Projects from './components/Projects.jsx'
+import Home from './components/Home.jsx'
 
 const router = createBrowserRouter ([
   {element: <Navbar /> ,
    children: [{
     path: '/',
-    element: <App />,
+    element: <Home />,
   }, 
   {
     path: '/about',
@@ -27,6 +28,11 @@ const router = createBrowserRouter ([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <div className='background'>
+    <div class="main_bg"></div>
+            <div class="main_bg layer1"></div>
+            <div class="main_bg layer 2"></div>
+    </div>
     <RouterProvider router={router} />
   </React.StrictMode>,
 )

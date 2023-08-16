@@ -39,17 +39,17 @@ const Home = () => {
         <div className = "home">
             <div className="homeText">
                 <p className="name" {...generateAOSAttributes(0)} >Hi, I'm &#160;<span className={`Mason ${isActive ? 'active' : ''}`}>Mason</span>.</p>
-                <p {...generateAOSAttributes(500)} >Previously &#160;<a href=""> @Verizon</a></p>
-                <p {...generateAOSAttributes(1000)} >Studying CS and Applied Math &#160;<a href=""> @BrownU</a></p>
+                <p {...generateAOSAttributes(500)} >Previously @Verizon</p>
+                <p {...generateAOSAttributes(1000)} >Studying CS and Applied Math @BrownU</p>
                 <p {...generateAOSAttributes(1500)}  >Nice to meet you  &#160;<span className='wave'>👋</span></p>
                 <div className='projectStart'>
-                    <p className='arrow'>↓</p>
+                    {/* <p className='arrow'>↓</p> */}
                 </div>
             </div>
-            <div class="main_bg"></div>
+            {/* <div class="main_bg"></div>
             <div class="main_bg layer1"></div>
-            <div class="main_bg layer 2"></div>
-            <div className='projectsMain'>
+            <div class="main_bg layer 2"></div> */}
+            {/* <div className='projectsMain'>
                 <div className="projectPages">
                 {projectsData.map((project, index) => (
                     <HomeProjects
@@ -69,7 +69,7 @@ const Home = () => {
                 </div>
                 <button><Link to ="/projects"style = {{fontSize: "24px"}}>See More</Link>
             </button>
-            </div>
+            </div> */}
         </div>
       );
 }

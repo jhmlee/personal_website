@@ -5,6 +5,14 @@ nav {
     min-height: 9vh;
     justify-content: center;
     align-items: baseline;
+    
+    color-scheme: light dark;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 nav .navName {
@@ -15,7 +23,6 @@ nav .navName {
 nav .links {
     margin-left: auto;
     margin-right: 3rem;
-    color: #302B27;
 }
 
 nav ul {
@@ -40,7 +47,7 @@ nav ul {
     filter: blur(1px);
 }
 .navbar .links a:not(.active) {
-    color: #302B27;
+    color: #323130;
     border-bottom: none;
   }
 

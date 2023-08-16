@@ -35,12 +35,6 @@ img {
     width: 35vw;
 }
 
-svg {
-    fill: "#1A1A1A";
-    height: 50px;
-    width: 50px;
-}
-
 svg:hover {
     animation: waveJiggleAnimation 0.5s ease;
     /* fill: #303030; */
