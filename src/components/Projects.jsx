@@ -17,7 +17,7 @@ const Projects = () => {
             title: "Personal Portfolio",
             github: "https://github.com/jhmlee/personal_website",
             description: ["Designed and executed the proposed design from scratch to create a React.js-based front-end that boasts scalability and interactivity "],
-            link: '',
+            link: 'https://mason-portfolio-eta.vercel.app/',
             tags: ['React', 'Javascript', 'CSS', 'HTML','Figma'],
         },
         {
@@ -36,7 +36,7 @@ const Projects = () => {
         {
             title: "Decision Tree",
             github: "https://github.com/jhmlee",
-            description: ["Description 5"],
+            description: ["Implemented ID3 machine-learning algorithm to develop a decision tree with proper object-oriented design in Java, trained the tree using a dataset to make predictions in new situations with up to 99.7% accuracy"],
             tags: ['Java'],
         },
     ];
