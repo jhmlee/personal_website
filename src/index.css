@@ -2,8 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: light;
-  /* color-scheme: light dark; for light and dark mode */
+  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -19,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -45,6 +45,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
@@ -66,11 +67,17 @@ button:focus-visible {
   opacity: 0.4;
   z-index: -1;
 }
+
 svg {
   fill: #f9f9f9;
   height: 50px;
   width: 50px;
 }
+
+nav a {
+  color: #f9f9f9;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -87,13 +94,14 @@ svg {
     background-image:  linear-gradient(-60deg, #3b60e4 20%,  #E0E2DB 50%);
   }
   svg {
-    fill: "#1A1A1A";
-    
+    fill: #1A1A1A;
   }
+  nav a{
+    color: #213547
+  }
+  
 }
 /*sliding background  #make both percents 50 to get it clear*/
-
-
 
 .layer1 {
   animation-direction: alternate-reverse;

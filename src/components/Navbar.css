@@ -6,13 +6,7 @@ nav {
     justify-content: center;
     align-items: baseline;
     
-    color-scheme: light dark;
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+ 
 }
 
 nav .navName {
@@ -37,7 +31,6 @@ nav ul {
 }
 
 .links li:hover {
-    color: white;
     opacity: 1;
     filter: none;
 }
@@ -47,7 +40,6 @@ nav ul {
     filter: blur(1px);
 }
 .navbar .links a:not(.active) {
-    color: #323130;
     border-bottom: none;
   }
 
