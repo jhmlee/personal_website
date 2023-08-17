@@ -36,7 +36,7 @@ const Projects = () => {
         {
             title: "Spotify Webscraper",
             github: "https://github.com/jhmlee/spotify-webscrape",
-            description: ["Utilizes beautifulsoup and Spotify API to scrape and create playlist in Spotify of Billboard top 100 for any given date"],
+            description: ["Utilizes Beautiful Soup python library and Spotify API to scrape and create playlist in Spotify of Billboard top 100 for any given date"],
             tags: ['Python', 'Beautiful Soup'],
         },
         {
