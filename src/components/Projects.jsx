@@ -34,6 +34,12 @@ const Projects = () => {
             tags: ['Python'],
         },
         {
+            title: "Spotify Webscraper",
+            github: "https://github.com/jhmlee/spotify-webscrape",
+            description: ["Utilizes beautifulsoup and Spotify API to scrape and create playlist in Spotify of Billboard top 100 for any given date"],
+            tags: ['Python', 'Beautiful Soup'],
+        },
+        {
             title: "Decision Tree",
             github: "https://github.com/jhmlee",
             description: ["Implemented ID3 machine-learning algorithm to develop a decision tree with proper object-oriented design in Java, trained the tree using a dataset to make predictions in new situations with up to 99.7% accuracy"],
