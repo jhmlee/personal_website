@@ -134,7 +134,7 @@
 }
 
 /* Responsive font size for smaller screens */
-@media (max-width: 634px) {
+@media (max-width: 650px) {
     .homeText .name {
         font-size: 70px; /* Adjust this value as needed */
     }
@@ -148,13 +148,16 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
   .projectHome {
       min-width: 10rem;
   }
-  .projectHomeContent .projectImage {
+  .homeText .Mason {
     margin-left: 0;
   }
+  .homeText .name {
+    font-size: 40px; /* Adjust this value as needed */
+}
 }
 
 @keyframes waveJiggleAnimation {
