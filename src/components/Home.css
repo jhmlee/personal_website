@@ -148,6 +148,15 @@
   }
 }
 
+@media (max-width: 300px) {
+  .projectHome {
+      min-width: 10rem;
+  }
+  .projectHomeContent .projectImage {
+    margin-left: 0;
+  }
+}
+
 @keyframes waveJiggleAnimation {
     0%, 100% {
       transform: rotate(0deg);
