@@ -80,11 +80,13 @@
     }
 }
 
-@media (max-width: 500px) {
-    .projectHome {
-        min-width: 20rem;
-    }
+@media (max-width: 550px) {
+
     .container {
         padding: 0rem;
+    }
+    .project {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
   }

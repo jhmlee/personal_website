@@ -43,4 +43,10 @@ nav ul {
     border-bottom: none;
   }
 
+  @media (max-width: 480px) {
+    .navbar ul {
+        gap: 1rem;
+    }
+  }
+
 
