@@ -7,11 +7,11 @@ import github from '../assets/icons/github.svg'
 const Projects = () => {
     const projectsData = [
         {
-            title: "SAT Solver",
+            title: "Expense Tracker",
             github: "https://github.com/jhmlee",
-            description: ["Intuitively visualize and solve NP-complete Boolean satisfiability problems", "Solver includes multiple algorithms and their visualizations to fully understand logic"],
+            description: ["Comprehensive MERN stack finance tracking application, utilizes token based authentication"],
             link: '',
-            tags: ['React', 'Javascript', 'CSS', 'Git'],
+            tags: ['Node', 'Express', 'MongoDB', 'Mongoose', 'React', 'Javascript', 'CSS', 'Git'],
         },
         {
             title: "Personal Portfolio",
