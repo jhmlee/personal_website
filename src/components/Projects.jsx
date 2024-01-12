@@ -15,6 +15,13 @@ const Projects = () => {
             tags: ["Python", "PyTorch", "NumPy"],
         },
         {
+            title: "Caching I/O",
+            github: "https://github.com/jhmlee",
+            description: ["Developed and enhanced a caching system for reading/writing files, running with an efficiency to within 5x of C’s standard library"],
+            link: '',
+            tags: ["C"],
+        },
+        {
             title: "Expense Tracker",
             github: "https://github.com/jhmlee",
             description: ["Comprehensive MERN stack finance tracking application, utilizes token based authentication"],
