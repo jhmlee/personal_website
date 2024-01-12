@@ -7,11 +7,12 @@ import github from '../assets/icons/github.svg'
 const Projects = () => {
     const projectsData = [
         {
-            title: "Expense Tracker",
+            title: "Neural Machine Translation: Language to Logic",
             github: "https://github.com/jhmlee",
-            description: ["Comprehensive MERN stack finance tracking application, utilizes token based authentication"],
+            description: ["Implemented a neural machine translation model using a Transformer encoder-decoder architecture with attention to translate natural language to machine-readable logical form expression Successfully developed the full Seq2Seq model with attention to achieve up to 72% exact match accuracy and 89%\
+            per-token accuracy on testing data"],
             link: '',
-            tags: ['Node', 'Express', 'MongoDB', 'Mongoose', 'React', 'Javascript', 'CSS', 'Git'],
+            tags: ["Python", "PyTorch", "NumPy"],
         },
         {
             title: "Expense Tracker",
