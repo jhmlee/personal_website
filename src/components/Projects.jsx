@@ -9,7 +9,7 @@ const Projects = () => {
         {
             title: "Neural Machine Translation: Language to Logic",
             github: "https://github.com/jhmlee",
-            description: ["Implemented a neural machine translation model using a Transformer encoder-decoder architecture with attention to translate natural language to machine-readable logical form expression Successfully developed the full Seq2Seq model with attention to achieve up to 72% exact match accuracy and 89%\
+            description: ["Implemented a neural machine translation model using a Transformer encoder-decoder architecture with attention to translate natural language to machine-readable logical form expression", "Successfully developed the full Seq2Seq model with attention to achieve up to 72% exact match accuracy and 89%\
             per-token accuracy on testing data"],
             link: '',
             tags: ["Python", "PyTorch", "NumPy"],
