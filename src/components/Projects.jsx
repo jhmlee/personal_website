@@ -14,6 +14,13 @@ const Projects = () => {
             tags: ['Node', 'Express', 'MongoDB', 'Mongoose', 'React', 'Javascript', 'CSS', 'Git'],
         },
         {
+            title: "Expense Tracker",
+            github: "https://github.com/jhmlee",
+            description: ["Comprehensive MERN stack finance tracking application, utilizes token based authentication"],
+            link: '',
+            tags: ['Node', 'Express', 'MongoDB', 'Mongoose', 'React', 'Javascript', 'CSS', 'Git'],
+        },
+        {
             title: "Personal Portfolio",
             github: "https://github.com/jhmlee/personal_website",
             description: ["Designed and executed the proposed design from scratch to create a React.js-based front-end that boasts scalability and interactivity "],
